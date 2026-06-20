@@ -1,5 +1,11 @@
 import discord
 from discord.ext import commands
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BOT_SAHIBI_ID = int(os.getenv('BOT_SAHIBI_ID', '1123477916920053862'))
 
 class SunucuYap(commands.Cog):
     def __init__(self, bot):
@@ -43,6 +49,16 @@ class SunucuYap(commands.Cog):
     @commands.command(name="sunucu-yap", description="Yeni bir sunucu yapısı oluştur")
     async def sunucu_yap(self, ctx):
         """Discord sunucusunda kanal ve rol yapısını otomatik oluştur"""
+        
+        # Sadece Bot Sahibi Kontrol
+        if ctx.author.id != BOT_SAHIBI_ID:
+            embed = discord.Embed(
+                title="❌ Yetkisiz Erişim",
+                description="Bu komutu sadece bot sahibi kullanabilir!",
+                colour=discord.Colour.red()
+            )
+            await ctx.send(embed=embed)
+            return
         
         # Rolleri Oluştur
         await ctx.send("🚀 Sunucu yapısı oluşturuluyor...")
