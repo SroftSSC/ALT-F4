@@ -43,7 +43,7 @@ async def on_ready():
 # Komutları Yükle
 async def load_commands():
     for filename in os.listdir('./komutlar'):
-        if filename.endswith('.py'):
+        if filename.endswith('.py') and filename != '__init__.py':
             await bot.load_extension(f'komutlar.{filename[:-3]}')
             print(f"✓ {filename} yüklendi")
 
