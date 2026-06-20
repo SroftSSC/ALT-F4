@@ -277,7 +277,20 @@ class SunucuYap(commands.Cog):
                     if kanal_turu == "text":
                         kanal = await kategori.create_text_channel(kanal_adi)
                     else:
-                        kanal = await kategori.create_voice_channel(kanal_adi)
+                        # Ses kanalı için kişi sınırı belirle
+                        user_limit = None
+                        if "2k" in kanal_adi:
+                            user_limit = 2
+                        elif "3k" in kanal_adi:
+                            user_limit = 3
+                        elif "4k" in kanal_adi:
+                            user_limit = 4
+                        elif "5k" in kanal_adi:
+                            user_limit = 5
+                        elif "10k" in kanal_adi:
+                            user_limit = 10
+                        
+                        kanal = await kategori.create_voice_channel(kanal_adi, user_limit=user_limit)
                     
                     olusturulan_kanallar[kanal_adi] = kanal
                     print(f"✓ {kanal_adi} kanalı oluşturuldu")
