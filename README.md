@@ -79,8 +79,26 @@ Sunucuda rol ve kanal yapısını otomatik oluşturur.
 
 ## 📝 Lisans
 
-MIT License
+**GNU General Public License v3.0**
+
+Bu proje GPL v3 lisansı altında dağıtılmaktadır. Bu şu anlama gelir:
+
+✅ Yapabileceklerin:
+- Kodu inceleyebilir ve öğrenebilirsin
+- Değiştirebilir ve kendi versiyonunu oluşturabilirsin
+- Sunucunda kullanabilirsin
+
+❌ Yapamayacaklarınız:
+- Orijinal yazarı belirtmeden kullanamaz
+- Kendi isminizde satamaz
+- Değişiklikleri gizleyemez
+- Telif hakkını kaldıramaz
+
+**Lisansı ihlal etmek = Telif hakkı ihlali = Hukuki sonuçlar**
+
+Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ## 👨‍💻 Geliştirici
 
 ALT-F4 Bot - Discord Moderasyon Botu
+GPL v3 - Kimse Çalamasın!
