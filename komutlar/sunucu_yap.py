@@ -164,9 +164,25 @@ class SunucuYap(commands.Cog):
             "📢 Genel": [
                 ("💬-sohbet", "text"),
                 ("📢-duyurular", "text"),
-                ("🎮-eğlence", "text"),
+                ("📋-kurallar", "text"),
+                ("❓-yardim", "text"),
+            ],
+            "🎮 Eğlence & Oyun": [
+                ("🎮-oyunlar", "text"),
                 ("🎰-kumar", "text"),
+                ("😂-meme", "text"),
+                ("🎬-video", "text"),
+                ("🎵-müzik", "text"),
+                ("📷-fotoğraf", "text"),
+                ("🎨-sanat", "text"),
+                ("📚-okuma", "text"),
+                ("💭-tartışma", "text"),
+                ("🔞-18-plus", "text"),
+            ],
+            "🤖 Bot & Sponsor": [
                 ("🤖-bot-komutlar", "text"),
+                ("💎-sponsor", "text"),
+                ("🎁-giveaway", "text"),
             ],
             "🎙️ Ses Kanalları": [
                 ("🎧-2-kisilik", "voice"),
