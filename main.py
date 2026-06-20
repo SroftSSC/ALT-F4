@@ -12,6 +12,10 @@ intents.members = True
 
 bot = commands.Bot(command_prefix="/" , intents=intents)
 
+# Konfigürasyon
+BOT_SAHIBI_ID = int(os.getenv('BOT_SAHIBI_ID', '1123477916920053862'))
+SUNUCU_ID = int(os.getenv('SUNUCU_ID', '1517677204509687959'))
+
 # Roller Hiyerarşisi (İzinler)
 ROLLE_HIYERARSI = {
     "Kurucu": 15,
